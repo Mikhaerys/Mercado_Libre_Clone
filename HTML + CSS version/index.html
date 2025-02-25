@@ -7,88 +7,104 @@
         <link rel="stylesheet" href="styles.css">
         <link rel="icon" type="image/x-icon"
             href="https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/5.21.22/mercadolibre/favicon.svg">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <title>Mercado Libre Colombia</title>
     </head>
 
     <body>
         <header>
-            <div class="header-logo">
-                <a class="nav-logo" href="https://www.mercadolibre.com.co/"></a>
-            </div>
-            <div class="header-search">
-                <form action="https://www.mercadolibre.com.co/jm/search" method="get">
-                    <input type="text" placeholder="Buscar productos, marcas y más…" maxlength="120" autocomplete="off">
-                    <button type="submit"></button>
-                </form>
-            </div>
-            <div class="header-nav-img">
-                <a
-                    href="https://www.mercadolibre.com.co/ofertas/envios-gratis#DEAL_ID=MCO&S=UnidaddeNegocio&V=1&T=BME&L=MKTG_UNKALLBANNERMENUFSNB&me.audience=unknown&me.bu=3&me.bu_line=26&me.component_id=banner_menu_web_ml&me.content_id=UNK_FREE_SHIPPING_NB&me.flow=-1&me.logic=user_journey&me.position=0">
-                    <img src="https://http2.mlstatic.com/D_NQ_665279-MLA82474368441_022025-OO.webp"
-                        alt="ENVIO GRATIS PRIMERA COMPRA">
-                </a>
-            </div>
-            <div class="header-nav-location">
-                <a
-                    href="https://www.mercadolibre.com.co/navigation/addresses-hub?go=https%3A%2F%2Fwww.mercadolibre.com.co%2F">
-                    <span>Ingresa tu</span>
-                    <span> ubicación</span>
-                </a>
-            </div>
-            <div class="header-nav-menu">
-                <ul>
-                    <li class="nav-menu-item">
-                        <a class="nav-menu-item-link"
-                            href="https://www.mercadolibre.com.co/categorias#nav-header">Categorías</a>
-                    </li>
-                    <li class="nav-menu-item">
-                        <a class="nav-menu-item-link"
-                            href="https://www.mercadolibre.com.co/ofertas#nav-header">Ofertas</a>
-                    </li>
-                    <li class="nav-menu-item">
-                        <a class="nav-menu-item-link"
-                            href="https://www.mercadolibre.com.co/cupones?source_page=mperfil#menu-user#nav-header">Cupones</a>
-                    </li>
-                    <li class="nav-menu-item">
-                        <a class="nav-menu-item-link"
-                            href="https://www.mercadolibre.com.co/ofertas/supermercado#nav-header">Supermercado</a>
-                    </li>
-                    <li class="nav-menu-item">
-                        <a class="nav-menu-item-link"
-                            href="https://www.mercadolibre.com.co/c/ropa-y-accesorios#nav-header">Moda</a>
-                    </li>
-                    <li class="nav-menu-item">
-                        <a class="nav-menu-item-link"
-                            href="https://play.mercadolibre.com.co/?origin=navigation_menu_web#nav-header">Mercado
-                            Play</a>
-                    </li>
-                    <li class="nav-menu-item">
-                        <a class="nav-menu-item-link"
-                            href="https://www.mercadolibre.com.co/syi/core/list#nav-header">Vender</a>
-                    </li>
-                    <li class="nav-menu-item">
-                        <a class="nav-menu-item-link" href="https://www.mercadolibre.com.co/ayuda#nav-header">Ayuda</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="header-nav-user">
-                <nav>
-                    <ul class="nav-user-menu-list">
-                        <li class="nav-user-menu-list__item">
-                            <a
-                                href="https://www.mercadolibre.com.co/registration?confirmation_url=https%3A%2F%2Fwww.mercadolibre.com.co%2F#nav-header">Crea
-                                tu cuenta</a>
+            <div class="header-container">
+                <div class="header-logo">
+                    <a class="nav-logo" href="https://www.mercadolibre.com.co/">
+                        <img src="https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/6.6.108/mercadolibre/logo_large_25years_v2.png"
+                            alt="logo">
+                    </a>
+                </div>
+                <div class="header-search">
+                    <form action="https://www.mercadolibre.com.co/jm/search" method="get">
+                        <input type="text" placeholder="Buscar productos, marcas y más…" maxlength="120"
+                            autocomplete="off">
+                        <button type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="header-nav-img">
+                    <a
+                        href="https://www.mercadolibre.com.co/ofertas/envios-gratis#DEAL_ID=MCO&S=UnidaddeNegocio&V=1&T=BME&L=MKTG_UNKALLBANNERMENUFSNB&me.audience=unknown&me.bu=3&me.bu_line=26&me.component_id=banner_menu_web_ml&me.content_id=UNK_FREE_SHIPPING_NB&me.flow=-1&me.logic=user_journey&me.position=0">
+                        <img src="https://http2.mlstatic.com/D_NQ_665279-MLA82474368441_022025-OO.webp"
+                            alt="ENVIO GRATIS PRIMERA COMPRA">
+                    </a>
+                </div>
+                <div class="header-nav-location">
+                    <a
+                        href="https://www.mercadolibre.com.co/navigation/addresses-hub?go=https%3A%2F%2Fwww.mercadolibre.com.co%2F">
+                        <i class="material-icons">place</i>
+                        <span class="location-span-up">Ingresa tu</span>
+                        <span class="location-span-down"> ubicación</span>
+                    </a>
+                </div>
+                <div class="header-nav-menu">
+                    <ul>
+                        <li class="nav-menu-item">
+                            <a class="nav-menu-item-link"
+                                href="https://www.mercadolibre.com.co/categorias#nav-header">Categorías</a>
                         </li>
-                        <li class="nav-user-menu-list__item">
-                            <a
-                                href="https://www.mercadolibre.com/jms/mco/lgz/login?platform_id=ML&go=https%3A%2F%2Fwww.mercadolibre.com.co%2F&loginType=explicit#nav-header">Ingresa</a>
+                        <li class="nav-menu-item">
+                            <a class="nav-menu-item-link"
+                                href="https://www.mercadolibre.com.co/ofertas#nav-header">Ofertas</a>
                         </li>
-                        <li class="nav-user-menu-list__item">
-                            <a href="https://myaccount.mercadolibre.com.co/purchases/list#nav-header">Mis compras</a>
+                        <li class="nav-menu-item">
+                            <a class="nav-menu-item-link"
+                                href="https://www.mercadolibre.com.co/cupones?source_page=mperfil#menu-user#nav-header">Cupones</a>
+                        </li>
+                        <li class="nav-menu-item">
+                            <a class="nav-menu-item-link"
+                                href="https://www.mercadolibre.com.co/ofertas/supermercado#nav-header">Supermercado</a>
+                        </li>
+                        <li class="nav-menu-item">
+                            <a class="nav-menu-item-link"
+                                href="https://www.mercadolibre.com.co/c/ropa-y-accesorios#nav-header">Moda</a>
+                        </li>
+                        <li class="nav-menu-item">
+                            <a class="nav-menu-item-link"
+                                href="https://play.mercadolibre.com.co/?origin=navigation_menu_web#nav-header">Mercado
+                                Play</a>
+                        </li>
+                        <li class="nav-menu-item">
+                            <a class="nav-menu-item-link"
+                                href="https://www.mercadolibre.com.co/syi/core/list#nav-header">Vender</a>
+                        </li>
+                        <li class="nav-menu-item">
+                            <a class="nav-menu-item-link"
+                                href="https://www.mercadolibre.com.co/ayuda#nav-header">Ayuda</a>
                         </li>
                     </ul>
-                </nav>
-                <a class="nav-car" href="https://www.mercadolibre.com.co/gz/cart/v2"></a>
+                </div>
+                <div class="header-nav-user">
+                    <nav>
+                        <ul class="nav-user-menu-list">
+                            <li class="nav-user-menu-list__item">
+                                <a
+                                    href="https://www.mercadolibre.com.co/registration?confirmation_url=https%3A%2F%2Fwww.mercadolibre.com.co%2F#nav-header">Crea
+                                    tu cuenta</a>
+                            </li>
+                            <li class="nav-user-menu-list__item">
+                                <a
+                                    href="https://www.mercadolibre.com/jms/mco/lgz/login?platform_id=ML&go=https%3A%2F%2Fwww.mercadolibre.com.co%2F&loginType=explicit#nav-header">Ingresa</a>
+                            </li>
+                            <li class="nav-user-menu-list__item">
+                                <a href="https://myaccount.mercadolibre.com.co/purchases/list#nav-header">Mis
+                                    compras</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a class="nav-cart" href="https://www.mercadolibre.com.co/gz/cart/v2">
+                        <i class="fa fa-shopping-cart"></i>
+                    </a>
+                </div>
             </div>
         </header>
         <section class="carousel">

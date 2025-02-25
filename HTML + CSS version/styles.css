@@ -1,0 +1,203 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    border-collapse: collapse;
+    background-color: #fff;
+    font-family: "Proxima Nova", -apple-system, Roboto, Arial, sans-serif, sans-serif;
+}
+
+header {
+    height: 100px;
+    background-color: #ffe600;
+    display: flex;
+    justify-content: center;
+}
+
+.header-container {
+    display: grid;
+    grid-template-columns: 162px minmax(340px, 588px) minmax(350px, 390px);
+    grid-template-rows: 40px 28px;
+    grid-column-gap: 20px;
+    grid-row-gap: 12px;
+    column-gap: 20px;
+    row-gap: 12px;
+    padding: 8px 10px 12px 10px;
+}
+
+.header-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 40px;
+}
+
+.header-search {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    & form {
+        position: relative;
+        width: 100%;
+
+        & input {
+            width: 100%;
+            height: 40px;
+            font-size: 16px;
+            border-radius: 2px;
+            border-style: solid;
+            border-width: 1.5px;
+            background-color: #fff;
+            border-color: rgba(0, 0, 0, 0);
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .2);
+            padding: 10px 60px 10px 15px;
+            position: relative;
+            z-index: 1;
+        }
+
+        & button {
+            top: 0;
+            right: 0;
+            z-index: 2;
+            width: 46px;
+            height: 40px;
+            color: #666;
+            font-size: 22px;
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0);
+            border: none;
+            border-radius: 0 2px 2px 0;
+            position: absolute;
+        }
+    }
+}
+
+.header-nav-img {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    & a img {
+        max-width: 340px;
+        max-height: 39px;
+    }
+}
+
+.header-nav-location {
+    position: relative;
+
+    & a {
+        top: 0;
+        left: 0;
+        height: 28px;
+        display: flex;
+        position: relative;
+        padding: 0 0 0 24px;
+        text-decoration: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        color: rgba(0, 0, 0, .8980392157);
+
+        & i {
+            position: absolute;
+            top: 2px;
+            left: 0;
+            bottom: 0;
+        }
+
+        .location-span-up {
+            font-size: 12px;
+            font-weight: 400;
+            color: rgba(0, 0, 0, .55);
+        }
+
+        .location-span-down {
+            font-size: 14px;
+            font-weight: 400;
+            color: rgba(0, 0, 0, .8980392157);
+        }
+    }
+}
+
+.header-nav-menu {
+    margin: 0;
+    height: 100%;
+
+    & ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        list-style-type: none;
+
+        .nav-menu-item {
+            height: 28px;
+            font-size: 14px;
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+
+            .nav-menu-item-link {
+                color: rgba(0, 0, 0, .8980392157);
+                text-decoration: none;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.header-nav-user {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .nav-cart {
+        width: 22px;
+        height: 20px;
+
+        & i {
+            font-size: 18px;
+            color: rgba(0, 0, 0, .8980392157);
+        }
+    }
+}
+
+.nav-user-menu-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    list-style-type: none;
+
+    .nav-user-menu-list__item {
+        height: 28px;
+        font-size: 14px;
+        margin-right: 15px;
+        display: flex;
+        align-items: center;
+
+        & a {
+            color: rgba(0, 0, 0, .8980392157);
+            text-decoration: none;
+            font-weight: 400;
+        }
+    }
+}
