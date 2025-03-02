@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MercadoLibre Clone</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f5f5f5;
+            }
+
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #ffe600;
+                padding: 10px 20px;
+            }
+
+            .logo {
+                font-size: 24px;
+                font-weight: bold;
+            }
+
+            .search-bar {
+                width: 40%;
+                padding: 5px;
+                border: none;
+                border-radius: 5px;
+            }
+
+            nav ul {
+                list-style: none;
+                display: flex;
+                gap: 15px;
+                margin: 0;
+                padding: 0;
+            }
+
+            nav ul li {
+                display: inline;
+            }
+
+            nav ul li a {
+                text-decoration: none;
+                color: black;
+            }
+
+            .banner {
+                background-color: #fff;
+                padding: 50px;
+                text-align: center;
+                font-size: 24px;
+                font-weight: bold;
+            }
+
+            .categories,
+            .products {
+                margin: 20px;
+                padding: 20px;
+                background-color: white;
+                border-radius: 10px;
+            }
+
+            .category-grid,
+            .product-grid {
+                display: flex;
+                gap: 15px;
+                justify-content: space-around;
+            }
+
+            .category,
+            .product {
+                padding: 20px;
+                background-color: #ececec;
+                border-radius: 5px;
+                text-align: center;
+                width: 150px;
+            }
+
+            .image {
+                width: 100%;
+                height: 100px;
+                background-color: gray;
+                margin-bottom: 10px;
+            }
+
+            footer {
+                text-align: center;
+                padding: 10px;
+                background-color: #333;
+                color: white;
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <div class="navbar">
+                <div class="logo">MercadoLibre</div>
+                <input type="text" class="search-bar" placeholder="Buscar productos, marcas y más...">
+                <nav>
+                    <ul>
+                        <li><a href="#">Categorías</a></li>
+                        <li><a href="#">Ofertas</a></li>
+                        <li><a href="#">Historial</a></li>
+                        <li><a href="#">Vender</a></li>
+                        <li><a href="#">Ayuda</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="banner">
+                <h1>Las mejores ofertas para ti</h1>
+            </section>
+            <section class="categories">
+                <h2>Categorías destacadas</h2>
+                <div class="category-grid">
+                    <div class="category">Tecnología</div>
+                    <div class="category">Electrodomésticos</div>
+                    <div class="category">Moda</div>
+                    <div class="category">Hogar</div>
+                </div>
+            </section>
+            <section class="products">
+                <h2>Productos recomendados</h2>
+                <div class="product-grid">
+                    <div class="product">
+                        <div class="image"></div>
+                        <p>Producto 1</p>
+                        <p>$100.000</p>
+                    </div>
+                    <div class="product">
+                        <div class="image"></div>
+                        <p>Producto 2</p>
+                        <p>$200.000</p>
+                    </div>
+                    <div class="product">
+                        <div class="image"></div>
+                        <p>Producto 3</p>
+                        <p>$300.000</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2025 MercadoLibre Clone</p>
+        </footer>
+    </body>
+
+</html>
